@@ -1,13 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
 }
 body {
     height: 100vh;
     background: #161513;
     color: white;
-    font-family: 'outfit';
+    font-family: 'outfit', sans-serif;
+    font-size: 16px; /* Base font size for scaling */
+    line-height: 1.5; /* Improves readability */
 }
 html {
     scroll-behavior: smooth;
+    font-size: 100%; /* Ensures consistent scaling across devices */
 }

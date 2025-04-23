@@ -2,46 +2,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 2rem 10%; /* Use percentage for margin */
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 60px;
-    font-size: 20px;
+    gap: 3rem; /* Use rem for consistent spacing */
+    font-size: 1.25rem; /* Use rem for font size */
     padding: 0;
     margin: 0;
 }
 
-    .nav-menu li {
-        position: relative;
-        cursor: pointer;
-        padding: 5px 0;
-        transition: all 0.3s ease;
-    }
+.nav-menu li {
+    position: relative;
+    cursor: pointer;
+    padding: 0.3rem 0; /* Use rem for padding */
+    transition: all 0.3s ease;
+}
 
-        .nav-menu li::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #34d399, #2ecc71, #27ae60, #16a085); /* Warm vibrant greens */
-            background-size: 400% 400%;
-            animation: gradientAnimation 4s ease infinite;
-            transition: width 0.3s ease;
-        }
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #34d399, #2ecc71, #27ae60, #16a085);
+    background-size: 400% 400%;
+    animation: gradientAnimation 4s ease infinite;
+    transition: width 0.3s ease;
+}
 
-        .nav-menu li:hover::after {
-            width: 100%;
-        }
+.nav-menu li:hover::after {
+    width: 100%;
+}
 
-        .nav-menu li:active::after {
-            width: 100%;
-        }
+.nav-menu li:active::after {
+    width: 100%;
+}
 
 @keyframes gradientAnimation {
     0% {
@@ -54,5 +54,17 @@
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 1rem 5%; /* Adjust margin for smaller screens */
+    }
+
+    .nav-menu {
+        gap: 2rem; /* Reduce gap for smaller screens */
+        font-size: 1rem; /* Adjust font size */
     }
 }

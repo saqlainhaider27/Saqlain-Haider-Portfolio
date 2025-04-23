@@ -1,29 +1,30 @@
 .site-footer {
-    margin-top: 100px;
+    margin-top: 5rem;
     color: #ffffff;
-    padding: 30px 0;
+    padding: 2rem 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px equivalent in rem */
 }
 
 .footer-content {
-    max-width: 1140px;
+    max-width: 90%; /* Use percentage for responsiveness */
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem; /* Use rem for consistent spacing */
 }
 
 .social-links {
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px equivalent in rem */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center align the links */
+    gap: 1rem; /* Add spacing between links */
 }
 
-    .social-links a {
-        display: inline-block;
-        margin: 0 10px;
-        color: #ffffff;
-        font-size: 20px;
-        transition: color 0.3s ease;
-    }
+.social-links a {
+    color: #ffffff;
+    font-size: 1.25rem; /* 20px equivalent in rem */
+    transition: color 0.3s ease;
+}
 
-        .social-links a:hover {
-            color: #a1f76b;
-        }
+.social-links a:hover {
+    color: #a1f76b;
+}
