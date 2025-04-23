@@ -1,10 +1,8 @@
 .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
+    height: 60vw;
     padding: 0 20px; /* Add padding for smaller screens */
+    margin-top: 10%;
 }
 
 .header-content {

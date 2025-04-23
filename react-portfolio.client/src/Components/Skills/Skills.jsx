@@ -36,11 +36,10 @@ const Skills = () => {
                                     style={{
                                         width: `${skill.level}%`,
                                         height: '100%',
-                                        backgroundColor: '#2ecc71',
+                                        backgroundColor: '#32cd32',
                                         borderRadius: '7.5px',
                                     }}
                                 />
-                                <span className="progress-text">{skill.level}%</span>
                             </div>
                         </div>
                     </div>
@@ -65,7 +64,6 @@ const slideIn = keyframes`
 `;
 
 const StyledWrapper = styled.div`
-    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -74,9 +72,9 @@ const StyledWrapper = styled.div`
     .separator {
         width: 80%;
         height: 5px;
-        background: linear-gradient(90deg, #32cd32, #00ff00, #32cd32);
-        background-size: 200% 100%;
-        animation: ${moveGradient} 2s linear infinite;
+        background: linear-gradient(90deg, #6bff6b, #32cd32, #7fff7f, #32cd32, #6bff6b);
+        background-size: 300% 100%;
+        animation: ${moveGradient} 3s ease infinite;
         border-radius: 10px;
         margin-bottom: 20px;
     }
@@ -133,16 +131,6 @@ const StyledWrapper = styled.div`
         background-color: #ddd;
         border-radius: 7.5px;
         overflow: hidden;
-    }
-
-    .progress-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1rem;
-        color: black;
-        font-weight: bold;
     }
 `;
 

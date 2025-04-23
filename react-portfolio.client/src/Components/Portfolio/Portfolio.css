@@ -1,12 +1,12 @@
 /* The gradient line above the text */
 .gradient-line {
     width: 80%; /* Shorten the line */
-    height: 0.3rem; /* Use rem for height */
+    height: 5px;
     background: linear-gradient(90deg, #32cd32, #00ff00, #32cd32); /* Green gradient */
     background-size: 200% 100%;
     animation: moveGradient 2s linear infinite; /* Animation for the gradient */
     margin: 0 auto; /* Center the line */
-    border-radius: 0.5rem; /* Round the corners */
+    border-radius: 10px; /* Round the corners */
 }
 
 @keyframes moveGradient {
@@ -21,30 +21,14 @@
 
 .title-text {
     text-align: center;
-    margin-top: 1.25rem; /* Use rem for spacing */
-    font-size: 2rem; /* Keep font size responsive */
+    margin-top: 20px;
+    font-size: 2rem;
 }
 
 .portfolio-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 1.25rem; /* Use rem for gap */
-    margin-top: 1.875rem; /* Use rem for spacing */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .gradient-line {
-        width: 90%; /* Adjust width for smaller screens */
-    }
-
-    .title-text {
-        font-size: 1.5rem; /* Reduce font size */
-    }
-
-    .portfolio-container {
-        gap: 1rem; /* Adjust gap */
-        margin-top: 1.5rem; /* Adjust spacing */
-    }
+    gap: 20px;
+    margin-top: 30px;
 }

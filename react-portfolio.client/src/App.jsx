@@ -5,9 +5,10 @@ import Skills from './Components/Skills/Skills.jsx';
 import Portfolio from './Components/Portfolio/Portfolio.jsx';
 import Education from './Components/Education/Education.jsx';
 import Footer from './Components/Footer/Footer.jsx';
+
 const App = () => {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '100vh' }}>
             <Navbar />
             <section id="home">
                 <Header />
@@ -21,13 +22,7 @@ const App = () => {
             <section id="projects">
                 <Portfolio />
             </section>
-            {/*<section id="experience">*/}
-            {/*    <div style={{ minHeight: '100vh', padding: '4rem', textAlign: 'center', backgroundColor: '#111', color: 'white' }}>*/}
-            {/*        <h1>Experience</h1>*/}
-            {/*        <p>This is the experience section. Add your content here.</p>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
-            <Footer/>
+            <Footer />
         </div>
     );
 };
